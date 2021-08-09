@@ -1,0 +1,15 @@
+*********************** BRIEF INTRODUCTION TO JAVASCRIPT ********************
+
+Javascript is a High-Level , Object-Oriented, Multi-Paradigm Programming Language
+
+# BREAKING DOWN
+=> Programming-Language:
+                       A Programming-Language is Just a tool that allows us to write code that will instruct a computer to do something.
+
+=> High-Level: 
+             We don’t have to think much about a lot of complex stuff such as managing the computers memory while it runs our programme.
+
+=> Object-Oriented: language is mostly based on the concept of objects for storing most kinds of data.
+
+=> Multi-Paradigm: It just means that it's so flexible and versatile, that we can use all kinds of different programming styles, such as imperative and declarative programming. These different styles are just
+different ways of structuring our code.
