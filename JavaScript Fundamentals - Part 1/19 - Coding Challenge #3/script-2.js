@@ -17,38 +17,50 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
 */
 
-// TEST DATA:
-// const AverageScoreTeamKoala = (96 + 108 + 89) / 3;
-// const AverageScoreTeamDolphin = (88 + 91 + 110) / 3;
-
-// if (AverageScoreTeamDolphin > AverageScoreTeamKoala) {
-//   console.log(`Team Dolphin Wins 🎉`);
-// } else if (AverageScoreTeamDolphin < AverageScoreTeamKoala) {
-//   console.log(`Team Koala Wins 🎉`);
-// } else {
-//   console.log(`Both Team Wins the trophy 🎊🎊`);
-// }
-
-// TEST DATA BONUS: 1
-// const AverageScoreTeamKoala = (97 + 112 + 101) / 3;
-// const AverageScoreTeamDolphin = (109 + 95 + 106) / 3;
-// const minimumScore = 100;
-
-// TEST DATA BONUS: 2
-const AverageScoreTeamKoala = (97 + 112 + 101) / 3;
-const AverageScoreTeamDolphin = (109 + 95 + 101) / 3;
+/*
+////////// SOlution-1 ////////
+// Bonus 1:
+const averageScoreDolphin = (96 + 108 + 89) / 3;
+const averageScoreKoaLa = (88 + 91 + 110) / 3;
+console.log(averageScoreDolphin, averageScoreKoaLa);
 const minimumScore = 100;
 
-console.log(AverageScoreTeamDolphin, AverageScoreTeamKoala);
-
-if (AverageScoreTeamDolphin > AverageScoreTeamKoala && minimumScore) {
-  console.log(`Team Dolphin Wins 🎉`);
-} else if (AverageScoreTeamDolphin < AverageScoreTeamKoala && minimumScore) {
-  console.log(`Team Koala Wins 🎉`);
-} else if (AverageScoreTeamDolphin === AverageScoreTeamKoala) {
-  if (AverageScoreTeamDolphin > 100 && AverageScoreTeamKoala > 100) {
-    console.log(`Both Team Wins 🎊🎊`);
-  } else {
-    console.log(`NOBODY WINS !`);
-  }
+if (
+  averageScoreDolphin > averageScoreKoaLa &&
+  averageScoreDolphin >= minimumScore
+) {
+  console.log(`Team Dolphin Wins !! 🏆`);
+} else if (
+  averageScoreKoaLa > averageScoreDolphin &&
+  averageScoreKoaLa >= minimumScore
+) {
+  console.log(`Team Koala Wins !! 🏆`);
+} else if (
+  averageScoreDolphin === averageScoreKoala &&
+  averageScoreDolphin >= 100 &&
+  averageScoreKoala >= 100
+) {
+  console.log(`Both wins the trophy!`);
 }
+
+// Bonus 2:
+if (
+  averageScoreDolphin > averageScoreKoaLa &&
+  averageScoreDolphin >= minimumScore
+) {
+  console.log(`Team Dolphin Wins !! 🏆`);
+} else if (
+  averageScoreKoaLa > averageScoreDolphin &&
+  averageScoreKoaLa >= minimumScore
+) {
+  console.log(`Team Koala Wins !! 🏆`);
+} else if (
+  averageScoreDolphin === averageScoreKoala &&
+  averageScoreDolphin >= 100 &&
+  averageScoreKoala >= 100
+) {
+  console.log(`Both wins the trophy!`);
+} else {
+  console.log(`No one wins the trophy`);
+}
+*/
