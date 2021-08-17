@@ -5,53 +5,50 @@ console.log("Coding Challenge #3");
 // Coding Challenge #3
 
 /*
-Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+Let's go back to Manish and Vishal comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
 
-1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+1. For each of them, create an object with properties for their full name, mass, and height (Manish Miller and Vishal Smith)
 2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
-3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "Vishal Singh's BMI (28.3) is higher than Manish Kumar's (23.9)!"
 
-TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA: Manishs weights 78 kg and is 1.69 m tall. Vishal weights 92 kg and is 1.95 m tall.
 
 GOOD LUCK 😀
 */
 
-// 1
-const mark = {
-  fullName: "Mark Miller",
+const manish = {
+  fullName: "manish kumar",
   mass: 78,
   height: 1.69,
-
-  // 2
-  calcBMI: function () {
+  calcBMi: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
   },
 };
 
-const john = {
-  fullName: "John Smith",
+const vishal = {
+  fullName: "vishal singh",
   mass: 92,
   height: 1.95,
-
-  // 2
-  calcBMI: function () {
+  calcBMi: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
   },
 };
 
-// 3
-mark.calcBMI();
-john.calcBMI();
-console.log(mark.bmi, john.bmi);
+vishal.calcBMi();
+manish.calcBMi();
+console.log(manish.bmi, vishal.bmi);
 
-if (mark.bmi > john.bmi) {
+if (manish.bmi > vishal.bmi) {
   console.log(
-    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})!`
+    `${manish.fullName}'s BMI (${manish.bmi}) is higher than ${vishal.fullName}'s (${vishal.bmi})!`
   );
-} else {
+
+  // console.log(
+  //   `${manish.fullName}'s BMI (${manish.bmi}) is higher than ${vishal.fullName}'s (${vishal.bmi}))!`
+} else if (vishal.bmi > manish.bmi) {
   console.log(
-    `${mark.fullName}'s BMI (${john.bmi}) is higher than ${john.fullName}'s BMI (${mark.bmi})!`
+    `${vishal.fullName}'s BMI (${vishal.bmi}) is higher than ${manish.fullName}'s (${manish.bmi})!`
   );
 }
